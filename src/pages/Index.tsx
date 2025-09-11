@@ -171,10 +171,10 @@ const MolecuLinkLanding = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800/50">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div className="container mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
               src="https://cdn.poehali.dev/files/b8e7aa75-5c3a-4579-a2bb-fb148e85665c.png" 
@@ -184,20 +184,20 @@ const MolecuLinkLanding = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-slate-300 hover:text-white transition-colors">{t.nav.about}</a>
-            <a href="#solution" className="text-slate-300 hover:text-white transition-colors">{t.nav.solution}</a>
-            <a href="#science" className="text-slate-300 hover:text-white transition-colors">{t.nav.science}</a>
-            <a href="#contact" className="text-slate-300 hover:text-white transition-colors">{t.nav.contact}</a>
+            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">{t.nav.about}</a>
+            <a href="#solution" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">{t.nav.solution}</a>
+            <a href="#science" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">{t.nav.science}</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">{t.nav.contact}</a>
           </div>
 
           <div className="flex items-center space-x-4">
             <button
               onClick={() => setLanguage(language === 'en' ? 'ru' : 'en')}
-              className="px-3 py-1 rounded-md bg-slate-800 text-slate-300 hover:text-white transition-colors"
+              className="px-3 py-1 rounded-md bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors font-medium"
             >
               {language === 'en' ? 'RU' : 'EN'}
             </button>
-            <Button className="biotech-gradient">
+            <Button className="modern-gradient text-white">
               {t.hero.cta}
             </Button>
           </div>
@@ -205,47 +205,47 @@ const MolecuLinkLanding = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6 relative overflow-hidden">
-        <div className="molecule-pattern"></div>
+      <section className="section-spacing px-6 relative bg-white">
+        <div className="hero-pattern absolute inset-0"></div>
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 biotech-gradient-text animate-fade-in">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 modern-gradient-text animate-fade-in leading-tight">
               {t.hero.title}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed animate-slide-up">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed animate-slide-up max-w-3xl mx-auto">
               {t.hero.subtitle}
             </p>
-            <Button size="lg" className="biotech-gradient hover:scale-105 transition-transform animate-scale-in">
+            <Button size="lg" className="modern-gradient hover:scale-105 transition-transform animate-scale-in text-white px-8 py-3">
               <Icon name="Zap" className="mr-2" />
               {t.hero.cta}
             </Button>
           </div>
           
           <div className="mt-16 relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-teal-600/20 rounded-full blur-3xl animate-float"></div>
-            <Icon name="Atom" size={120} className="mx-auto text-teal-400 animate-float" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-full blur-3xl animate-float"></div>
+            <Icon name="Atom" size={100} className="mx-auto text-blue-500 animate-float" />
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section id="about" className="py-16 px-6 bg-slate-800/50">
+      <section id="about" className="section-spacing px-6 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.problem.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.problem.description}
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
               {t.problem.stats.map((stat, index) => (
-                <Card key={index} className="bg-slate-900/50 border-slate-700">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold biotech-gradient-text mb-2">{stat}</div>
+                <Card key={index} className="clean-card hover:shadow-lg transition-shadow">
+                  <CardContent className="p-8 text-center">
+                    <div className="text-3xl font-bold modern-gradient-text mb-4">{stat}</div>
                     <Icon name={index === 0 ? "Clock" : index === 1 ? "DollarSign" : "TrendingDown"} 
-                          className="mx-auto text-slate-400" />
+                          className="mx-auto text-gray-400" size={24} />
                   </CardContent>
                 </Card>
               ))}
@@ -255,23 +255,23 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-16 px-6">
+      <section id="solution" className="section-spacing px-6 bg-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.solution.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.solution.description}
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
               {t.solution.benefits.map((benefit, index) => (
-                <Card key={index} className="bg-gradient-to-br from-blue-900/30 to-teal-900/30 border-teal-700/50">
-                  <CardContent className="p-6 text-center">
+                <Card key={index} className="clean-card hover:shadow-lg transition-shadow border-l-4 border-l-blue-500">
+                  <CardContent className="p-8 text-center">
                     <Icon name={index === 0 ? "Timer" : index === 1 ? "Database" : "TrendingUp"} 
-                          className="mx-auto text-teal-400 mb-4" size={48} />
-                    <div className="text-2xl font-bold text-teal-300">{benefit}</div>
+                          className="mx-auto text-blue-500 mb-4" size={40} />
+                    <div className="text-xl font-semibold text-gray-900">{benefit}</div>
                   </CardContent>
                 </Card>
               ))}
@@ -281,23 +281,23 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Scientific Foundation */}
-      <section id="science" className="py-16 px-6 bg-slate-800/50">
+      <section id="science" className="section-spacing px-6 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.science.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.science.description}
             </p>
             
-            <Card className="bg-gradient-to-r from-yellow-900/20 to-yellow-800/20 border-yellow-700/50 mb-8">
+            <Card className="clean-card bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200 max-w-2xl mx-auto">
               <CardContent className="p-8">
-                <Icon name="Award" className="mx-auto text-yellow-400 mb-4" size={64} />
-                <div className="text-3xl font-bold text-yellow-300 mb-2">
+                <Icon name="Award" className="mx-auto text-yellow-500 mb-4" size={48} />
+                <div className="text-2xl font-bold text-gray-900 mb-2">
                   Nobel Prize 2024
                 </div>
-                <div className="text-lg text-yellow-200">
+                <div className="text-lg text-gray-700">
                   {t.science.achievement}
                 </div>
               </CardContent>
@@ -307,32 +307,32 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* How it Works */}
-      <section className="py-16 px-6">
+      <section className="section-spacing px-6 bg-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.howItWorks.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.howItWorks.description}
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               {t.howItWorks.steps.map((step, index) => (
-                <Card key={index} className="bg-slate-900/50 border-slate-700 relative">
-                  <CardContent className="p-6 text-center">
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-sm font-bold">
+                <Card key={index} className="clean-card hover:shadow-lg transition-shadow relative">
+                  <CardContent className="p-8 text-center">
+                    <div className="absolute -top-3 -right-3 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center text-sm font-bold text-white">
                       {index + 1}
                     </div>
                     <Icon name={index === 0 ? "Dna" : index === 1 ? "Zap" : "Pill"} 
-                          className="mx-auto text-teal-400 mb-4" size={48} />
-                    <div className="text-lg font-semibold">{step}</div>
+                          className="mx-auto text-cyan-500 mb-4" size={40} />
+                    <div className="text-lg font-semibold text-gray-900">{step}</div>
                   </CardContent>
                 </Card>
               ))}
             </div>
             
-            <div className="text-2xl font-mono biotech-gradient-text">
+            <div className="text-xl font-mono modern-gradient-text font-semibold">
               {t.howItWorks.pipeline}
             </div>
           </div>
@@ -340,24 +340,24 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-16 px-6 bg-slate-800/50">
+      <section className="section-spacing px-6 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.benefits.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.benefits.description}
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {t.benefits.items.map((item, index) => (
-                <Card key={index} className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
+                <Card key={index} className="clean-card hover:shadow-lg transition-all hover:-translate-y-1">
                   <CardContent className="p-6 text-center">
                     <Icon name={index === 0 ? "Clock" : index === 1 ? "DollarSign" : index === 2 ? "TrendingUp" : "User"} 
-                          className="mx-auto text-teal-400 mb-4" size={40} />
-                    <h3 className="text-lg font-semibold mb-2 text-teal-300">{item.title}</h3>
-                    <p className="text-slate-400 text-sm">{item.desc}</p>
+                          className="mx-auto text-blue-500 mb-4" size={36} />
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -367,24 +367,24 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Who We Help */}
-      <section className="py-16 px-6">
+      <section className="section-spacing px-6 bg-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.whoWeHelp.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.whoWeHelp.description}
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {t.whoWeHelp.segments.map((segment, index) => (
-                <Card key={index} className="bg-gradient-to-br from-slate-900/50 to-blue-900/20 border-slate-700">
+                <Card key={index} className="clean-card hover:shadow-lg transition-all hover:-translate-y-1">
                   <CardContent className="p-6 text-center">
                     <Icon name={index === 0 ? "Building2" : index === 1 ? "Microscope" : index === 2 ? "Hospital" : "TrendingUp"} 
-                          className="mx-auto text-blue-400 mb-4" size={40} />
-                    <h3 className="text-lg font-semibold mb-2 text-blue-300">{segment.title}</h3>
-                    <p className="text-slate-400 text-sm">{segment.desc}</p>
+                          className="mx-auto text-gray-700 mb-4" size={36} />
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900">{segment.title}</h3>
+                    <p className="text-gray-600 text-sm">{segment.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -394,24 +394,24 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Vision */}
-      <section className="py-16 px-6 bg-slate-800/50">
+      <section className="section-spacing px-6 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.vision.title}
             </h2>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
               {t.vision.description}
             </p>
             
             <div className="mt-12 relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-teal-600/10 rounded-3xl blur-2xl"></div>
-              <div className="relative flex justify-center items-center space-x-8 py-8">
-                <Icon name="Users" size={48} className="text-blue-400" />
-                <Icon name="Plus" size={32} className="text-slate-400" />
-                <Icon name="Brain" size={48} className="text-teal-400" />
-                <Icon name="Plus" size={32} className="text-slate-400" />
-                <Icon name="Atom" size={48} className="text-purple-400" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl"></div>
+              <div className="relative flex justify-center items-center space-x-8 py-12">
+                <Icon name="Users" size={40} className="text-blue-500" />
+                <Icon name="Plus" size={24} className="text-gray-400" />
+                <Icon name="Brain" size={40} className="text-cyan-500" />
+                <Icon name="Plus" size={24} className="text-gray-400" />
+                <Icon name="Atom" size={40} className="text-purple-500" />
               </div>
             </div>
           </div>
@@ -419,17 +419,17 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-16 px-6">
+      <section id="contact" className="section-spacing px-6 bg-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 biotech-gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 modern-gradient-text">
               {t.cta.title}
             </h2>
-            <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               {t.cta.description}
             </p>
             
-            <Card className="bg-slate-900/50 border-slate-700 max-w-2xl mx-auto">
+            <Card className="clean-card max-w-2xl mx-auto">
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
@@ -438,7 +438,7 @@ const MolecuLinkLanding = () => {
                       placeholder={t.cta.form.name}
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="bg-slate-800 border-slate-600"
+                      className="bg-white border-gray-300 focus:border-blue-500"
                       required
                     />
                     <Input
@@ -447,7 +447,7 @@ const MolecuLinkLanding = () => {
                       placeholder={t.cta.form.email}
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="bg-slate-800 border-slate-600"
+                      className="bg-white border-gray-300 focus:border-blue-500"
                       required
                     />
                   </div>
@@ -457,7 +457,7 @@ const MolecuLinkLanding = () => {
                     placeholder={t.cta.form.company}
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="bg-slate-800 border-slate-600"
+                    className="bg-white border-gray-300 focus:border-blue-500"
                   />
                   
                   <Textarea
@@ -465,11 +465,11 @@ const MolecuLinkLanding = () => {
                     placeholder={t.cta.form.message}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="bg-slate-800 border-slate-600 min-h-32"
+                    className="bg-white border-gray-300 focus:border-blue-500 min-h-32"
                     required
                   />
                   
-                  <Button type="submit" size="lg" className="w-full biotech-gradient">
+                  <Button type="submit" size="lg" className="w-full modern-gradient text-white">
                     <Icon name="Send" className="mr-2" />
                     {t.cta.form.submit}
                   </Button>
@@ -481,16 +481,16 @@ const MolecuLinkLanding = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-slate-900 border-t border-slate-800">
+      <footer className="py-12 px-6 bg-gray-900 border-t border-gray-800">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
               src="https://cdn.poehali.dev/files/b8e7aa75-5c3a-4579-a2bb-fb148e85665c.png" 
               alt="MolecuLink.ai" 
-              className="h-6 w-auto"
+              className="h-8 w-auto"
             />
           </div>
-          <p className="text-slate-400">
+          <p className="text-gray-400 text-lg">
             © 2024 MolecuLink.ai. {language === 'en' ? 'Reshaping the future of medicine.' : 'Меняем будущее медицины.'}
           </p>
         </div>
