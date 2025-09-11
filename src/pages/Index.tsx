@@ -179,7 +179,7 @@ const MolecuLinkLanding = () => {
             <img 
               src="https://cdn.poehali.dev/files/b8e7aa75-5c3a-4579-a2bb-fb148e85665c.png" 
               alt="MolecuLink.ai" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           
