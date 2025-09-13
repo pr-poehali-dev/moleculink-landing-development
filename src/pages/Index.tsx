@@ -23,19 +23,19 @@ const MolecuLinkLanding = () => {
         contact: 'Contact'
       },
       hero: {
-        title: 'MolecuLink.ai is reshaping the future of medicine',
-        subtitle: 'By applying advanced deep learning, we transform the process of drug discovery, reducing the search for viable molecules from years to months. Our platform empowers scientists and pharma companies to accelerate breakthroughs and deliver life-saving therapies faster.',
+        title: 'Designing personalized drugs for high-mortality diseases with AI',
+        subtitle: 'One diagnosis ≠ one disease. Personalized medicines have higher efficacy, fewer side effects, and eliminate unnecessary trial-and-error cycles. The MolecuLink platform orchestrates AI models and accelerates drug molecule discovery by 8-10x.',
         cta: 'Partner with us'
       },
       problem: {
-        title: 'The Drug Discovery Challenge',
-        description: 'Drug discovery today is painfully slow and expensive. A full development cycle can take more than ten years, with 3–5 years spent only on identifying promising molecules. Costs often exceed billions, yet most candidates fail in late-stage trials, wasting resources and delaying life-saving treatments.',
-        stats: ['10+ years', '$2.6B average cost', '90% failure rate']
+        title: 'The Personalized Medicine Challenge',
+        description: 'At today’s costs and development timelines, personalized medicines cannot be created and used on a mass scale. The discovery cycle takes more than 10 years, $160+ billion is spent on drug R&D annually, and 96% of drug candidates fail in trials.',
+        stats: ['10+ year cycle', '$160+ billion/year', '96% failure rate']
       },
       solution: {
-        title: 'AI-Powered Acceleration',
-        description: 'MolecuLink.ai dramatically accelerates this process. Our AI orchestrates multiple models to analyze millions of potential structures and narrow them down to a handful of candidates with the highest probability of success. By performing the initial work in silico, we give researchers a 3–5 year advantage, saving enormous time and resources.',
-        benefits: ['3-5 years saved', 'Million+ molecules analyzed', 'Higher success rate']
+        title: 'AI Molecule Modeling',
+        description: 'AI molecule modeling allows us to dramatically reduce the time and cost of searching for drug candidates. The technology reduces the drug candidate discovery cycle by 8-10x, significantly increases prediction accuracy, and enables the creation of personalized medicines.',
+        benefits: ['8-10x acceleration', 'High accuracy', 'Personalization']
       },
       science: {
         title: 'Scientific Foundation',
@@ -44,9 +44,9 @@ const MolecuLinkLanding = () => {
       },
       howItWorks: {
         title: 'How It Works',
-        description: 'Our platform operates in three layers. Screening AI analyzes DNA to identify risk zones for potential diseases. Pre-emptive Modeling AI generates protein candidates tailored to a patient\'s genetic profile. Therapeutic AI designs molecular drug candidates for specific tumors or conditions.',
-        steps: ['DNA Analysis', 'Protein Modeling', 'Drug Design'],
-        pipeline: 'in silico → in vitro → in vivo'
+        description: 'The MolecuLink platform orchestrates AI models and accelerates drug molecule discovery. Researchers define a target in the organism — the goal of drug action. The platform automatically selects molecules with the required properties for this target.',
+        steps: ['Target Definition', 'Molecule Selection', 'Candidate Formation'],
+        pipeline: 'Researchers → MolecuLink → Drug Candidates'
       },
       benefits: {
         title: 'Benefits',
@@ -60,12 +60,11 @@ const MolecuLinkLanding = () => {
       },
       whoWeHelp: {
         title: 'Who We Help',
-        description: 'We collaborate with pharmaceutical corporations seeking to accelerate their pipelines, biotech startups looking for advanced AI tools, medical centers pioneering personalized care, and investors who value reduced risks and faster ROI.',
+        description: 'Our product is focused on pharma, biotech startups, as well as medical and scientific organizations.',
         segments: [
-          { title: 'Pharma Corporations', desc: 'Accelerate drug pipelines' },
-          { title: 'Biotech Startups', desc: 'Advanced AI tools access' },
-          { title: 'Medical Centers', desc: 'Personalized care solutions' },
-          { title: 'Investors', desc: 'Reduced risks, faster ROI' }
+          { title: 'Pharmaceutical Companies', desc: 'Reduce R&D cycle by 8-10x' },
+          { title: 'Biotech Startups', desc: 'Rapid launch of innovative drugs' },
+          { title: 'Clinics & Research Centers', desc: 'Application for personalized medicine' }
         ]
       },
       vision: {
@@ -92,19 +91,19 @@ const MolecuLinkLanding = () => {
         contact: 'Контакты'
       },
       hero: {
-        title: 'MolecuLink.ai меняет будущее медицины',
-        subtitle: 'С помощью передовых нейросетевых технологий мы радикально сокращаем время поиска лекарственных молекул — от нескольких лет до нескольких месяцев. Наша платформа помогает учёным и фармкомпаниям быстрее создавать новые препараты и доводить их до пациентов.',
+        title: 'Дизайн персонализированных лекарств от болезней с высоким летальным исходом с помощью ИИ',
+        subtitle: 'Один диагноз ≠ одна болезнь. Персонализированные лекарства имеют более высокую эффективность, меньше побочных эффектов и исключают лишние циклы «проб и ошибок». Платформа MolecuLink оркестрирует ИИ-модели и ускоряет поиск лекарственных молекул в 8-10 раз.',
         cta: 'Стать партнёром'
       },
       problem: {
-        title: 'Проблема поиска лекарств',
-        description: 'Современная разработка лекарств слишком медленная и затратная. Полный цикл занимает более десяти лет, из которых 3–5 лет уходит только на поиск подходящей молекулы. Стоимость достигает миллиардов долларов, и при этом большинство кандидатов проваливаются на поздних стадиях испытаний.',
-        stats: ['10+ лет', '$2,6 млрд стоимость', '90% провалов']
+        title: 'Проблема создания персонализированных лекарств',
+        description: 'При сегодняшних стоимости и сроках разработки персонализированные лекарства не могут массово создаваться и использоваться. Цикл поиска занимает более 10 лет, 160+ млрд $ тратится на R&D лекарств в год, а 96% молекул-кандидатов проваливаются на испытаниях.',
+        stats: ['10+ лет цикл', '160+ млрд $ в год', '96% провалов']
       },
       solution: {
-        title: 'ИИ-ускорение',
-        description: 'MolecuLink.ai радикально ускоряет процесс. Наши алгоритмы оркестровки нейросетей анализируют миллионы возможных структур и сводят их к нескольким десяткам наиболее перспективных кандидатов. Благодаря этапу in silico мы экономим 3–5 лет разработки.',
-        benefits: ['3-5 лет экономии', 'Миллион+ молекул', 'Выше успешность']
+        title: 'ИИ-моделирование молекул',
+        description: 'ИИ-моделирование молекул позволяет кратно сократить время и стоимость поиска молекул-кандидатов. Технология сокращает цикл поиска молекул-кандидатов в 8-10 раз, значительно повышает точность предсказания и позволяет создавать персонализированные препараты.',
+        benefits: ['В 8-10 раз ускорение', 'Высокая точность', 'Персонализация']
       },
       science: {
         title: 'Научный фундамент',
@@ -113,9 +112,9 @@ const MolecuLinkLanding = () => {
       },
       howItWorks: {
         title: 'Как это работает',
-        description: 'Наша платформа работает в три этапа. Screening AI анализирует ДНК и выявляет рисковые зоны. Pre-emptive Modeling AI моделирует белки-кандидаты, заточенные под геном пациента. Therapeutic AI создаёт молекулы-лекарства под конкретную опухоль или заболевание.',
-        steps: ['Анализ ДНК', 'Моделирование белков', 'Дизайн лекарств'],
-        pipeline: 'in silico → in vitro → in vivo'
+        description: 'Платформа MolecuLink оркестрирует ИИ-модели и ускоряет поиск лекарственных молекул. Исследователи задают мишень (таргет) в организме — цель действия лекарства. Платформа автоматизированно подбирает молекулы с нужными свойствами.',
+        steps: ['Задание мишени', 'Подбор молекул', 'Формирование кандидатов'],
+        pipeline: 'Исследователи → MolecuLink → Молекулы-кандидаты'
       },
       benefits: {
         title: 'Преимущества',
@@ -129,12 +128,11 @@ const MolecuLinkLanding = () => {
       },
       whoWeHelp: {
         title: 'Кому мы помогаем',
-        description: 'Мы работаем с фармацевтическими корпорациями, стремящимися ускорить разработку, биотех-стартапами, нуждающимися в доступе к современным AI-технологиям, медицинскими центрами, внедряющими персонализированное лечение.',
+        description: 'Продукт ориентирован на фарму, биотех-стартапы, а также на медицинские и научные организации.',
         segments: [
-          { title: 'Фарм-корпорации', desc: 'Ускорение разработки препаратов' },
-          { title: 'Биотех-стартапы', desc: 'Доступ к ИИ-инструментам' },
-          { title: 'Медцентры', desc: 'Персонализированное лечение' },
-          { title: 'Инвесторы', desc: 'Снижение рисков, быстрый ROI' }
+          { title: 'Фармацевтические компании', desc: 'Сокращение цикла R&D в 8–10 раз' },
+          { title: 'Биотех-стартапы', desc: 'Быстрый вывод инновационных препаратов' },
+          { title: 'Клиники и научные центры', desc: 'Применение для персонализированной медицины' }
         ]
       },
       vision: {
